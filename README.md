@@ -2,7 +2,7 @@
 
 # Caching for Throughput Cash
 ## Exercise Assumptions
-* Latency issues are caused either by the network or the downstream Calendar services(Google, Microsoft, Apple, etc). i.e. the recommendation will not be focusing on performance issues caused internally by algorithms on the applications servers themselve
+* Latency issues are caused either by the network or the downstream Calendar services(Google, Microsoft, Apple, etc). i.e. the recommendation will not be focusing on performance issues caused internally by algorithms on the applications servers themselves
 * The data is a combination of dynamic and static data with various levels of non-functional performance requirements; e.g data can be:
     * Somewhat stale(e.g. Zillow property likes)
     * Updated immediated. (e.g. Meeting acceptance)
@@ -39,7 +39,7 @@ The below diagram captures how I envisioned problem space and along with the rec
         * Cache service should be redundant, however the API services must still be operable if the cache solution is down.
 
 * Monitor the cache. 
-    * Cache statistics(hits, misses) should be kept to verify assumptions. Strategy can then be tweaked for different sets of data based how the different implementations perform.
+    * Cache statistics(hits, misses) should be kept to verify assumptions. The implementation for different sets of data can then be tweaked based how the implementations perform.
 
 ## Other thoughts
 * Could memoization help?
