@@ -7,8 +7,14 @@
     * Somewhat stale(e.g. Zillow property likes)
     * Updated immediated. (e.g. Meeting acceptance)
 
-  * Architecturally, there are multiple instances of the same service, integrating with these APIs, that is fronted by a load balancer. Within the systems, the application is architected in a way that all interaction with the downstream systems flows through a particular module.
+  * Architecture
+    * Multiple instances of the same service
+    * Load balancer fronting the system. 
+    * The software is constructed so that all calendar API interaction flows through a particular module.
   
+The below diagram captures how the envisioned problem space and along with the recommended solution.
+
+![Architecture Diagram](cache.jpg)
 
 * Recommended approaches
     * Static data
@@ -30,7 +36,5 @@
     * Frequent read, infrequent write
     * Infrequent read and write
 * Whatever approach is chosen still should have performance monitoring and cache metric monitoring in place to verify the choices.
-
-![Cache Diagram](cache.jpg)
 
 
