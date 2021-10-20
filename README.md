@@ -12,7 +12,7 @@
     * Load balancer fronting the system. 
     * The software is constructed so that all calendar API interaction flows through a particular module.
   
-The below diagram captures how the envisioned problem space and along with the recommended solution.
+The below diagram captures how I envisioned problem space and along with the recommended solution.
 
 ![Architecture Diagram](cache.jpg)
 ## Recommendations
@@ -42,4 +42,4 @@ The below diagram captures how the envisioned problem space and along with the r
     * Cache statistics(hits, misses) should be kept to verify assumptions. Strategy can then be tweaked for different sets of data based how the different implementations perform.
 
 ## Other thoughts
-    * Could memoization help?
+* Could memoization help?
