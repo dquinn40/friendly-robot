@@ -31,6 +31,6 @@
     * Infrequent read and write
 * Whatever approach is chosen still should have performance monitoring and cache metric monitoring in place to verify the choices.
 
-~[Cache Diagram](./cache.jpg)
+![Cache Diagram](cache.jpg)
 
 
